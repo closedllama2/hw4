@@ -1,6 +1,10 @@
 <div class="container-fluid">
 <h1>Places</h1>
 
+<p>
+  <button class="btn btn-secondary" onclick="window.location.href='/places/new'">New Place</button>
+</p>
+
 <% if @current_user %>
 <ul>
   <% for place in @places %>
@@ -8,8 +12,5 @@
   <% end %>
 </ul>
 
-<p>
-  <a href="/places/new">New place</a>
-</p>
 <% end %>
 </div>

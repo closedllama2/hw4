@@ -1,7 +1,4 @@
-body {
-  background-color: white;
-}
-
-p {
-  color: black;
+.post-date {
+  font-size: smaller;
+  font-weight: normal;
 }
