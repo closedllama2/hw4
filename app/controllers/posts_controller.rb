@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   def create
     if @current_user
       @post = Post.new(params["post"])
+      @post.uploaded_image.attach(params["post"]["uploaded_image"])
       @post.user_id = @current_user.id
       @post.save
     else
