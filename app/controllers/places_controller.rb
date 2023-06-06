@@ -11,7 +11,7 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
-    @place.user_id = params["user_id"]
+    ##@place.user_id = params["user_id"]
   end
 
   def create
